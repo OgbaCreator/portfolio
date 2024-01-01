@@ -1,0 +1,193 @@
+.section-5 {
+  background-color: black;
+  padding: 100px 0px 50px 0px;
+  color: white;
+}
+
+.contact-header {
+  text-align: center;
+  font-family: system-ui, -apple-system;
+  font-weight: 500;
+  font-size: 35px;
+  padding-bottom: 50px;
+  margin: 0 0px 100px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 50px;
+  row-gap: 15px;
+  padding: 0 100px;
+}
+
+.contact-grid1,
+.contact-grid2 {
+  height: 400px;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.user-contact-div {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  margin: 0 20px;
+}
+
+.instagram-div {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  transition: color 0.15s;
+  font-size: 18px;
+  margin-bottom: 50px;
+}
+
+.logo-con {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 18px;
+  transition: border 0.15s, color 0.15s;
+}
+
+.logo-con:hover {
+  box-shadow: 0px 0px 4px rgba(255, 255, 255, 0.9);
+}
+
+.logo-con:active {
+  box-shadow: 0px 0px 2px rgba(255, 255, 255, 0.9);
+}
+
+.bxl-instagram,
+.bx-folder,
+.bxl-whatsapp {
+  font-size: 25px;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.7);
+  transition: 0.15s;
+  margin-top: 3px;
+}
+
+.logo-con:hover .bxl-instagram,
+.logo-con:hover .bx-folder,
+.logo-con:hover .bxl-whatsapp {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.logo-info{
+  flex: 1;
+  text-align: center;
+}
+
+.logo-info p {
+  text-wrap: wrap;
+  display: inline-block;
+  color: white;
+}
+
+.logo-info p:hover {
+  color: white;
+}
+
+
+
+.contact-grid1 {
+  padding: 0 50px;
+}
+
+.input-name-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.input-name,
+.input-email {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  font-size: 16px;
+  padding: 8px 20px;
+  background-color: white;
+  font-family:  Tahoma;
+  font-weight: 500;
+}
+
+.input-message {
+  font-family:  Tahoma;
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  font-size: 16px;
+  padding: 10px 20px 150px 20px;
+  background-color: white;
+}
+
+.input-button {
+  display: flex;
+  justify-content: center;
+}
+
+.input-button button {
+  padding: 8px 15px;
+  color: black;
+  flex: 1;
+  border: none;
+  background-color: white;
+  margin: 0 50px;
+  cursor: pointer;
+  font-size: 20px;
+  background: linear-gradient(20deg, rgb(25, 25, 25), rgb(158, 187, 206), rgb(150, 40, 0));
+}
+
+.input-button button:hover {
+  background: linear-gradient(-150deg, rgb(25, 25, 25), rgb(161, 186, 203), rgb(150, 40, 0));
+}
+.input-button button:active {
+  background: linear-gradient(-150deg, rgb(10, 10, 10), rgb(128, 148, 160), rgba(121, 32, 0, 0.461));
+}
+
+.submit-para {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.submit-error-message {
+  text-align: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: red;
+  font-size: 15px;
+  font-family: Arial;
+  letter-spacing: 1px;
+}
+
+.web-designer {
+  margin: 25px;
+}
+
+.web-designer h3{
+  text-align: center;
+  margin-bottom: 10px;
+  font-weight: normal;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.web-designer-contact {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.web-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 35px;
+  border-radius: 18px;
+  transition: border 0.15s, color 0.15s;
+}

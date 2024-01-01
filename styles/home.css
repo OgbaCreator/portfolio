@@ -1,0 +1,81 @@
+/* =========== home-link-section ========= */
+.section-1 {
+  padding: 15px 0;
+  background-image: url(2.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page {
+  margin-top: 300px;
+  margin-bottom: 240px;
+  text-align: center;
+}
+
+.active.page {
+  filter: brightness(60%);
+}
+
+.page h1 {
+  font-family: Verdana;
+  color: white;
+  margin-bottom: 25px;
+  font-size: 28px;
+  letter-spacing: 1px;
+  
+}
+
+.page h2 {
+  font-family: Tahoma;
+  color: white;
+  letter-spacing: 1px;
+}
+
+.name {
+  font-family: Zeyada;
+  color: orangered;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.page p {
+  color: white;
+  font-size: 15px;
+  font-family: Tahoma;
+  letter-spacing: 1px;
+}
+
+.read-btn {
+  margin: 20px 30px 20px 0;
+  font-family: Tahoma;
+  letter-spacing: 1px;
+  font-size: 13px;
+  font-weight: bold;
+  background-color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 30px;
+  cursor: pointer;
+  transition: .15s ease;
+  text-decoration: none;
+  color: white;
+  align-self: center;
+  position: relative;
+}
+
+.read-btn::after {
+  content: '⬇';
+  opacity: 0;
+  transition: .15 ease;
+}
+
+.read-btn:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.read-btn:hover::after {
+  opacity: 1;
+}

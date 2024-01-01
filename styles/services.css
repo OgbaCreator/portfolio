@@ -1,0 +1,74 @@
+.section-3 {
+  background-color: whitesmoke;
+  color: black;
+  box-sizing: border-box;
+  padding: 200px 50px 90px 50px;
+  transition: .15s ease;
+}
+
+.service-header {
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0 0 200px 0;
+  text-align: center;
+  font-family: Verdana;
+  font-size: 35px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.service-container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  align-items: end;
+  border: 1px solid black;
+  height: 500px
+}
+
+.service-grid1 {
+  height: 500px;
+  border-right: 1px solid black;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: Verdana;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.service-grid2 {
+  height: 500px;
+  line-height: 30px;
+  font-family: Tahoma;
+  font-size: 15px;
+}
+
+.grid2-i {
+  height: 320px;
+  border-bottom: 1px solid black;
+  display: flex;
+}
+
+.grid2-ii {
+  height: 180px;
+  text-align: end;
+  padding: 0 10px;
+}
+
+.grid2-i-a {
+  height: 320px;
+  border-right: 1px solid black;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.grid2-i-b {
+  height: 320px;
+  flex: 1;
+  padding: 0 10px;
+}
+
+.grid2-ii div {
+  font-size: 20px;
+  font-weight: bold;
+}

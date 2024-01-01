@@ -1,0 +1,243 @@
+.section-2 {
+  background-color: rgb(220, 220, 220);
+}
+
+.active.section-2 {
+  filter: brightness(60%);
+}
+
+.section-2:hover .about-me span {
+  animation: mymove 10s ease-in-out infinite;
+}
+
+.section-2:hover .about-me-adjust span {
+  animation: mymove 10s ease-in-out infinite;
+}
+
+.abt-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: start;
+  padding: 150px 120px 70px 120px;
+  column-gap: 50px;
+  border-bottom: 2px solid gray;
+  margin: 0 10px;
+}
+
+.about-me-adjust {
+  color: white;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 80px;
+  text-align: center;
+  display: none;
+  letter-spacing: 1px;
+}
+
+.about-me-adjust p {
+  position: relative;
+  font-family: Verdana;
+}
+
+.about-me-adjust span {
+  color: orangered;
+  font-weight: bold;
+}
+
+.my-pic-div {
+  height: auto;
+  max-width: 350px;
+  border-radius: 15px;
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+}
+
+
+.my-pic {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 15px;
+  position: relative;
+  transition: 0.3s all ease-in-out;
+}
+
+.my-pic:hover {
+  transform: scale(1.1);
+}
+
+
+
+.about-me {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 40px;
+
+}
+
+.about-me p {
+  font-family: Verdana;
+}
+
+@keyframes mymove {
+  0% {left: 0px; color: orangered}
+  25% {left: 30px; color: orange}
+  50% {left: 0px; color: darkgreen}
+  75% {left: 30px; color: green}
+  100% {left: 0px; color: orangered}
+}
+
+.about-me-div {
+  color: white;
+  line-height: 25px;
+  font-size: 13px;
+  max-width: 630px;
+  margin-top: 10px;
+  border: 2px solid green;
+  border-left: none;
+  border-radius: 10px;
+  padding: 20px;
+  flex: 1;
+}
+
+.about-me-div p {
+  margin-top: 10px;
+}
+
+.about-me span {
+  color: orangered;
+}
+
+.sticky {
+  background-color: rgb(220, 220, 220);
+  color: black;
+  z-index: 1;
+  position: relative;
+  height: 400px;
+}
+
+.equalification-div {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+
+.equalification-div p {
+  margin-bottom: 12px;
+  margin-right: 20px;
+  font-size: 15px;
+  font-family: Tahoma;
+  position: relative;
+}
+
+.equalification-div p:hover {
+  color: orangered;
+}
+
+.add-toggle::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -7px;
+  left: 0;
+  background-color: orangered;
+  transform-origin: bottom;
+  transition: transform 0.3s ease-out;
+  transform: scaleX(1);
+  transform-origin: bottom;
+}
+
+.box-info {
+  font-size: 13px;
+}
+.box-info p {
+  position: relative;
+  margin: 5;
+  font-size: 11px;
+  line-height: 10px;
+  color: orangered;
+}
+
+.box-i,
+.box-ii,
+.box-iii,
+.box-iv,
+.box-v {
+  display: grid;
+  grid-template-columns: 90px 90px;
+  column-gap: 10px;
+}
+
+.abt-vision-box {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+  column-gap: 10px;
+  margin: 20px 0px;
+  align-items: center;
+}
+
+.vision-box,
+.mission-box{
+  text-align: center;
+  font: 35px bolder;
+  font-family: Tahoma;
+  color: black;
+  margin-bottom: 30px;
+}
+
+.abt-vision-box p {
+  font-family: Tahoma;
+  text-align: center;
+  color: black;
+  line-height: 30px;
+  font-size: 15px;
+}
+
+.bxvm {
+  margin: 50px;
+}
+
+
+.picture-box {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 30px;
+}
+
+.con {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  height: 300px;
+}
+
+.con div {
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+  position: absolute;
+}
+
+.my-pic-name {
+  top: -29px;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.my-pic-surname {
+  bottom: -28px;
+  color: rgba(0, 0, 0, 0.5)
+}
+
+.pics-vision {
+  object-fit: cover;
+  height: 300px;
+  width: 100%;
+}

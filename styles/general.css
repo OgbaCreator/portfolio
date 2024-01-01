@@ -1,0 +1,61 @@
+/* =========== General =========== */
+.html {
+  scroll-behavior: smooth;
+}
+
+.active.html {
+  overflow: hidden;
+}
+
+::selection {
+  color: white;
+  background-color: blue;
+}
+
+::-webkit-scrollbar {
+  width: 3px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: inherit;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: orangered;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: red;
+}
+
+
+
+:root {
+  --main-color: #ff7b00ea;
+  --seconde-color: #ffe0c3ea;
+  --title-color: #222;
+  --subtitle-color: #8d8d8d;
+}
+
+.body {
+  /* font-family: 'Poppins' sans-serif; */
+  font-family: system-ui, Roboto;
+  margin: 0;
+  background-color: black;
+  color: white;
+  overflow-x: hidden;
+  position: relative;
+}
+
+* {
+  margin: 0;
+}
+
+section {
+  overflow: hidden;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

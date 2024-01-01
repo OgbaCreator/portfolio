@@ -1,0 +1,116 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 0 100px;
+  left: 0;
+  z-index: 99999;
+  background: linear-gradient(45deg, rgb(0, 0, 0), rgb(25, 25, 25), rgb(102, 117, 127));
+  height: 70px;
+  filter: brightness(140%);
+}
+
+@keyframes header-animation-hover {
+  0% {
+      background-position: 0% 50%;
+  }
+  50% {
+      background-position: 100% 50%;
+  }
+  100% {
+      background-position: 0% 50%;
+  }
+}
+
+header:hover {
+  background: linear-gradient(45deg, rgb(17, 17, 17), rgb(102, 117, 127),rgb(152, 111, 96), black);
+  background-size: 400% 400%;
+  animation: header-animation-hover 2s ease infinite; 
+}
+
+/* # is for targeting id */
+#check {
+  display: none;
+}
+
+.icons {
+  right: 5%;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  display: none;
+  transition: .15s ease;
+}
+
+#close-icon {
+  display: none;
+  opacity: 0;
+  transition: .3s ease-in;
+}
+
+#menu-icon {
+  opacity: 1;
+  transition: .3s ease-out;
+}
+
+.header-1 p {
+  font-family: Zeyada;
+  font-size: 20px;
+}
+
+.header-1 p {
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.header-1 p span {
+  color: orangered;
+  font-weight: bold;
+  font-size: 23px;
+  font-family: Zeyada;
+}
+
+.header-2 {
+  display: flex;
+}
+
+.header-2 a {
+  margin: 0 10px;
+  font-size: 14px;
+  text-decoration: none;
+  font-weight: 500;
+  /* color: white; */
+  position: relative;
+  transition:color .15s;
+  transition-delay: none;
+}
+
+.header-2 a:hover {
+  color: orangered;
+}
+
+.clicked::after {
+  color: orangered;
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(1);
+  height: 2px;
+  bottom: -7px;
+  left: 0;
+  background-color: orangered;
+  /* transform-origin: bottom right; */
+  /* ^^^ it leaves from right */
+  transition: transform 0.25s ease-out;
+}
+
+/* .header-2 a:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+  ^^^ it comes in from left ^^^
+} 
+*/
